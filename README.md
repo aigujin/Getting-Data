@@ -2,7 +2,7 @@
 ##The script is base on the data.table package available from CRAN. This package is very fast and memory efficient when dealing with huge data.frames. 
 
 1. Read UCI data and convert it into data.tables.
-	* train.x and test.x are the DTs with the measearment variables (561 measerments);
+	* train.x and test.x are the DTs with the measurement variables (561 measurements);
 	* "train.act.labels" and "test.act.labels" are the activity labels;
 	* "train.sub" and "test.sub" are the data.tables  of subjects
 	* "features" is the data.table with the features
@@ -26,7 +26,7 @@ A key is the column in data.table by which we can join  another data.table
 	
 6. Join data of variables, subjects, and activities
 
-7. Calculate mean of all variables for each subject and ean activity
+7. Calculate mean of all variables for each subject and each activity
 
 8. Convert data.table to data.frame
 
