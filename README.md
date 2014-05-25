@@ -1,14 +1,14 @@
 ##NOTE: The UCI HAR dataset files have to be in the working directory
 ##The script is base on the data.table package available from CRAN. This package is very fast and memory efficient when dealing with huge data.frames. 
 
-#1. Read UCI data and convert it into data.tables.
+1. Read UCI data and convert it into data.tables.
 	* train.x and test.x are the DTs with the measearment variables (561 measerments);
 	* "train.act.labels" and "test.act.labels" are the activity labels;
 	* "train.sub" and "test.sub" are the data.tables  of subjects
 	* "features" is the data.table with the features
 	* "activity" is the data.table of activity names
 
-#2. Join test.x and train.x datasets together and assign new data.table "new.dt"
+2. Join test.x and train.x datasets together and assign new data.table "new.dt"
 	* "act.all" a data.table with joined activity labels and keyed by column "Code". A key is the column in data.table by which we can join with another data.table
 	* "subj.all" is joined subjects from test and train datasets
 	
