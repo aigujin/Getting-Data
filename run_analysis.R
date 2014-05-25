@@ -33,7 +33,6 @@ act.labeled <- activities[act.all]
 act.dt <-cbind(sel.df,subj.all,act.labeled[,list(Activity)])
 #7. Calculate mean of all variables for each subject and ean activity----
 mean.per.sub.act <- setkey(act.dt[,lapply(.SD,mean),by=list(Subject,Activity)],Subject)
-
 #8. Convert new data.table to data.frame----
 tidy.df <- as.data.frame(mean.per.sub.act)
 #9. Write as .csv----
