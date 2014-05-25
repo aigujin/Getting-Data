@@ -19,7 +19,7 @@ A key is the column in data.table by which we can join  another data.table
 4. Selecting columns conditional on "mean()"  and "std():
 	* "means.id" - columns that have "mean()" in their names;
 	* "std.id" - columns that have "std()" in the names;
-	* "sel.df" - a new data.table subset on "mean.id" and std.id"
+	* "sel.df" - a new data.table subset on "mean.id" and "std.id"
 
 5. Match activity to the referenced activity data.table:
 	* "act.labeled" - labeled activities for all subjects;
@@ -29,7 +29,6 @@ A key is the column in data.table by which we can join  another data.table
 7. Calculate mean of all variables for each subject and ean activity
 
 8. Convert data.table to data.frame
-tidy.df <- as.data.frame(mean.per.sub.act)
 
 9. Write as .csv
 write.csv(tidy.df,file='tidy.df.csv')
